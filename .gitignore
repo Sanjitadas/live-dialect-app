@@ -1,0 +1,41 @@
+# ───────────────
+# Python
+# ───────────────
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ───────────────
+# Virtual Environments
+# ───────────────
+.venv/
+venv/
+env/
+dialect-env/
+
+# ───────────────
+# Logs & Outputs
+# ───────────────
+*.log
+*.wav
+*.mp3
+*.mp4
+*.zip
+*.tmp
+output/
+*.DS_Store
+
+# ───────────────
+# Secret & Config Files
+# ───────────────
+.env
+.env.*
+!*.env.example
+
+# ───────────────
+# Streamlit Config
+# ───────────────
+.streamlit/config.toml
