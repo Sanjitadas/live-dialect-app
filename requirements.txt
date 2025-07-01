@@ -1,22 +1,32 @@
+# Core App
 streamlit==1.35.0
-openai==1.30.1           # OR cohere==4.45 if using Cohere
-transformers==4.41.2
-torch==2.3.0
+python-dotenv==1.0.1
+numpy==1.26.4
+
+# AI Translation (choose one)
+cohere==4.45  # If using Cohere
+# openai==1.30.1  # If using OpenAI instead
+
+# Grammar Correction
 language-tool-python==2.7.1
-SpeechRecognition==3.10.1
-pyaudio==0.2.14           # OR sounddevice==0.4.6 if used
-gTTS==2.5.1               # OR pyttsx3==2.90
-moviepy==1.0.3            # for MP4/MP3
-pydub==0.25.1             # for MP3 trimming/conversion
-opencv-python==4.9.0.80   # for subtitle_overlay.py
-python-docx==1.1.0        # for Word export
-fpdf==1.7.2               # for PDF export
-flask==3.0.3              # only if backend API is used
-watchdog==4.0.0           # for file change detection
-Cohere
-numpy
-whisper
-torch
-pyaudio
-edge-tts
-python-dotenv
+
+# Whisper STT
+whisper==1.1.10
+torch==2.3.0
+
+# Text-to-Speech
+edge-tts==6.1.7
+gTTS==2.5.1
+# pyttsx3==2.90  # Avoid: requires system dependencies
+
+# Audio Processing
+pydub==0.25.1
+ffmpeg-python==0.2.0
+
+# File Formats
+moviepy==1.0.3
+python-docx==1.1.0
+fpdf==1.7.2
+
+# Optional: remove if unused
+flask==3.0.3
