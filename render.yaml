@@ -3,11 +3,9 @@ services:
   - type: web
     name: dialect-translator-api
     env: python
-    branch: master
+    region: oregon
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python api.py"
-    envVars:
-      - key: COHERE_API_KEY
-        value: your-api-key-here
-      - key: OPENAI_API_KEY
-        value: your-api-key-here
+    branch: master
+    autoDeploy: true
